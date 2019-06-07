@@ -1,0 +1,16 @@
+{
+  "name": "project26",
+  "version": "1.0.0",
+  "description": "A English sound creator for learners.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "YuxuanWang-CHINA",
+  "license": "MIT",
+  "dependencies": {
+    "baidu-aip-sdk": "^2.3.9",
+    "fs-extra": "^8.0.1",
+    "iconv-lite": "^0.4.24"
+  }
+}
