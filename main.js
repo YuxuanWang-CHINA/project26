@@ -23,8 +23,9 @@ function readf(_location) {
 function getvoice(_vsrting, _vname) {
     return new Promise((resolve, reject) => {
         let client = new AipSpeechClient(mconfig.APP_ID, mconfig.API_KEY, mconfig.SECRET_KEY);
+        let opper = Math.round(Math.random());
 
-        let options = { spd: 3, per: 1, vol: 10 };
+        let options = { spd: 3, per: opper, vol: 10 };
 
         let progene = client.text2audio(_vsrting, options);
         progene.then((result) => {
